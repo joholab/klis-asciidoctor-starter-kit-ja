@@ -1,0 +1,27 @@
+[[toc:introduction]]
+== 序論
+
+ここに研究の序論を書く。
+
+This is an introduction. You can see <<code:sample>> below. The code was written by <<Hunt:99, Hunt (1999)>> and <<Allen:08, Allen (2008)>>. <<toc:introduction,序論>>にあるように
+
+=== Code コード
+
+[[code:sample]]
+[source,ruby]  
+----
+require 'sinatra'
+
+get '/hi' do
+  "Hello World!"
+end
+----
+
+=== Math 数式
+
+本スターターキットでは数式はサポートされていません。別ツールで作成の上、画像として保存し、読み込みましょう。
+
+=== 引用文
+
+> わがはいは猫である。名前はまだ無い。 +
+> どこで生れたかとんと見当けんとうがつかぬ。何でも薄暗いじめじめした所でニャーニャー泣いていた事だけは記憶している。

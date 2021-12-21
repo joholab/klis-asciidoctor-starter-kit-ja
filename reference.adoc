@@ -1,0 +1,8 @@
+[bibliography]
+== 引用文献
+// 書誌情報は筆頭著者苗字の五十音順、あるいはアルファベット順にならべる
+// 同一著者（群）の文献が複数ある場合は、年代の古い順にならべる（2000 → 2001）
+// 書誌情報の間には空行を入れる
+[[Allen:08]] Dan Allen. Seam in Action. Manning Publications.2008.
+
+[[Hunt:99]] Andy Hunt & Dave Thomas. The Pragmatic Programmer: From Journeyman to Master. Addison-Wesley. 1999.
