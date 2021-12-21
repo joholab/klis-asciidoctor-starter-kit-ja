@@ -55,6 +55,9 @@ asciidoctor-pdf -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-stylesdir=themes -a
 - 引用文献：`reference.adoc`
 - 付録：`appendix.adoc`（任意）
 
+## 画像ファイルの保存場所
+
+- 本文中で読み込む画像は、`images`フォルダに保存してください
 
 ## Asciidoctor レファレンス
 
