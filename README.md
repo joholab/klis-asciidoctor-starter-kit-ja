@@ -23,7 +23,7 @@
 1. Rubyをインストールする
 2. Rubyに関連パッケージを追加する（以下のコマンドを`Windows PowerShell`から実行する）
 ```
-PS C:\Users\アカウント名>gem install --no-ri --no-rdoc rouge asciidoctor asciidoctor-diagram asciidoctor-pdf-cjk-kai_gen_gothic 
+PS C:\Users\アカウント名>gem install -N rouge asciidoctor asciidoctor-diagram asciidoctor-pdf-cjk-kai_gen_gothic 
 PS C:\Users\アカウント名>asciidoctor-pdf-cjk-kai_gen_gothic-install
 ```
 3. VSCodeをインストールする
