@@ -59,9 +59,6 @@ asciidoctor-pdf -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-stylesdir=themes -a
 
 - 本文中で読み込む画像は、`images`フォルダに保存してください
 
-## 詳しい使い方
-
-- https://github.com/hideojoho/kb/blob/ja/research/writing-with-asciidoctor.md
 
 ## Asciidoctor レファレンス
 
