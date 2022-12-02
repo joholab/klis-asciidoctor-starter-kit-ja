@@ -1,0 +1,6 @@
+************************************* Invoked: 金 12 2 23:18:20 2022
+[0] Arguments: C:\Users\hideo\AppData\Local\Temp\msys2-x86_64-20221028.exe
+[10] Operations sanity check succeeded.
+[12] Warning: ロック ファイル "C:\Users\hideo\AppData\Local\Temp\msys2-x86_64-202210281234865.lock" を作成できません: プロセスはファイルにアクセスできません。別のプロセスが使用中です。
+ (0x00000020)
+[61] UnableToStart : インストーラーを起動できません : 別の msys2-x86_64-20221028 インスタンスがすでに実行されています。 そのインスタンスが終了するまで待機するか、そのインスタンスを閉じるか、システムを再起動してください。

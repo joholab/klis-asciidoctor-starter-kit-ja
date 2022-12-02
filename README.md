@@ -15,23 +15,26 @@
 - [Visual Studio Code](https://azure.microsoft.com/ja-jp/products/visual-studio-code/)（VSCode）
     - [AsciiDoc拡張機能](https://marketplace.visualstudio.com/items?itemName=asciidoctor.asciidoctor-vscode)
 
-
 ## インストール
 
-### Windows10の場合
+### Windows10/11の場合
 
 1. Rubyをインストールする
 2. Rubyに関連パッケージを追加する（以下のコマンドを`Windows PowerShell`から実行する）
 ```
-PS C:\Users\アカウント名>gem install -N rouge asciidoctor asciidoctor-diagram asciidoctor-pdf-cjk-kai_gen_gothic 
-PS C:\Users\アカウント名>asciidoctor-pdf-cjk-kai_gen_gothic-install
+PS C:\Users\アカウント名>gem install -N rouge asciidoctor asciidoctor-pdf
 ```
 3. VSCodeをインストールする
 4. VSCodeにAsciiDoc拡張機能を追加する
 
 ## PDFファイルの生成
 
-- 本レポジトリをダウンロード（あるいは`clone`）
+- 緑色の「`<> Code`」ボタンをクリック→`Download ZIP`を選択
+- ダウンロードしたファイルを展開
+- 下記フォントを入手して、`fonts`フォルダに保存
+    - [SourceHanSerifJP-VF.ttf](https://github.com/adobe-fonts/source-han-serif/tree/release/Variable/TTF/Subset)
+    - [KaiGenGothicJP-Regular.ttf](https://github.com/chloerei/asciidoctor-pdf-cjk-kai_gen_gothic/releases)
+    - [RobotoMono-VariableFont_wght.ttf](https://fonts.google.com/specimen/Roboto+Mono)（ダウンロード→展開）
 - [大学ホームページ](https://www.tsukuba.ac.jp/about/outline-logomark/)から校章画像をダウンロードして、`themes`フォルダに保存
     - :muscle: 上級者向け：校章画像ファイルは`.gitignore`に登録されています
 - ダウンロードしたフォルダをVSCodeで開く
@@ -39,9 +42,10 @@ PS C:\Users\アカウント名>asciidoctor-pdf-cjk-kai_gen_gothic-install
 - VScodeでターミナルを起動する(`` Ctr+Shift+` ``)
 - 以下のコマンドを実行
 ```bash
-asciidoctor-pdf -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-stylesdir=themes -a pdf-style=custom-theme.yml index.adoc
+asciidoctor-pdf -a scripts=cjk -a pdf-theme=./themes/klis-theme.yml -a pdf-fontsdir=./fonts index.adoc 
 ```
 - PDFファイル（`index.pdf`）が生成されたことを確認
+- ファイルを修正したら上記コマンドを再実行します
 
 ## ファイル一覧
 
@@ -59,6 +63,9 @@ asciidoctor-pdf -r asciidoctor-pdf-cjk-kai_gen_gothic -a pdf-stylesdir=themes -a
 
 - 本文中で読み込む画像は、`images`フォルダに保存してください
 
+## 基本的な使い方
+
+[上保研究室ナレッジベース](https://joholab.github.io/kb/research/how-to-use-asciidoctor/)を参考にしてください。
 
 ## Asciidoctor レファレンス
 

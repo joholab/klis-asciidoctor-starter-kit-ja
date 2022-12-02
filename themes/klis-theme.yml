@@ -1,0 +1,132 @@
+extend: default
+font:
+  catalog:
+    merge: true
+    GenNo Mincho JP: SourceHanSerifJP-VF.ttf
+    KaiGen Gothic JP: KaiGenGothicJP-Regular.ttf
+    Robot Mono JP: RobotoMono-VariableFont_wght.ttf
+  fallbacks:
+  - GenNo Mincho JP
+page:
+  background_color: ffffff
+  layout: portrait
+  margin: [30mm, 25mm, 25mm, 25mm]
+  size: A4
+base:
+  align: left
+  font_color: 000000
+  font_family: GenNo Mincho JP
+  font_size: 12
+  line_height_length: 18
+  line_height: $base_line_height_length / $base_font_size
+  font_size_large: round($base_font_size * 1.25)
+  font_size_small: round($base_font_size * 0.85)
+  font_size_min: $base_font_size * 0.75
+  border_radius: 4
+  border_width: 0.5
+  border_color: eeeeee
+vertical_rhythm: $base_line_height_length * 2 / 3
+horizontal_rhythm: $base_line_height_length
+prose:
+  margin-bottom: $vertical_rhythm * 0.9
+  margin-inner: $vertical_rhythm * 0.9
+  text-indent: $horizontal_rhythm * 2 / 3
+  text-indent-inner: $horizontal_rhythm * 2 / 3
+codespan:
+  font_color: b12146
+  font_family: Robot Mono JP
+kbd:
+  font-family: $codespan-font-family
+heading:
+  font_color: $base_font_color
+  font_family: KaiGen Gothic JP
+  # h1 is used for part titles
+  h1_font_size: floor($base_font_size * 2.6)
+  # h2 is used for chapter titles
+  h2_font_size: floor($base_font_size * 2.15)
+  h3_font_size: round($base_font_size * 1.7)
+  h4_font_size: $base_font_size_large
+  h5_font_size: $base_font_size
+  h6_font_size: $base_font_size_small
+  font_style: bold
+  line_height: 1.4
+  margin_top: $vertical_rhythm * 2
+  margin_bottom: $vertical_rhythm * 0.9
+title_page:
+  align: center
+  title:
+    top: 10%
+    font-family: KaiGen Gothic JP
+    font_size: $heading_h1_font_size
+    line_height: 
+    margin-bottom: 3cm
+  subtitle:
+    font-family: KaiGen Gothic JP
+    font_size: $heading_h2_font_size
+    line_height: 1
+    margin-top: $base_font_size * 1.25
+  authors:
+    content:
+      name_only: "{graduation} +\n +\n +\n{student-id} +\n{author} +\n +\n +\n{affiliation1} +\n{affiliation2}"
+    font_size: $heading_h3_font_size
+  logo:
+    top: 85%
+    image: image:UTLogo_150.png[pdfwidth=15%]
+codespan:
+  font_family: Robot Mono JP
+code:
+  font_color: $base_font_color
+  font_family: $codespan_font_family
+  font_size: ceil($base_font_size * 0.9)
+  padding: $code_font_size
+  line_height: 1.25
+  background_color: f5f5f5
+  border_color: cccccc
+  border_radius: $base_border_radius
+  border_width: 0.75
+  caption:
+    align: center
+    end: bottom
+toc:
+  indent: $horizontal_rhythm
+  dot_leader_color: dddddd
+  #dot_leader_content: ". "
+  line_height: 1.8
+list:
+  indent: $horizontal_rhythm * 1.5
+  item_spacing: $vertical_rhythm / 2
+footer:
+  font_size: $base_font_size_small
+  font_color: $base_font_color
+  border_color: dddddd
+  border_width: 0
+  height: $base_line_height_length * 4
+  padding: [0, 1, 0, 1]
+  valign: top
+  recto:
+    right:
+      content: '{page-number}'
+  verso:
+    left:
+      content: '{page-number}'
+table:
+  border-color: 000000
+  border-width: [1.25, 0]
+  grid-width: [0, 0]
+  head:
+    font-family: KaiGen Gothic JP
+    border-bottom-width: 0.8
+    cell-padding: [4, 2]
+  cell:
+    padding: 2
+  caption:
+    align: center
+    end: bottom
+image:
+  caption:
+    align: center
+    end: bottom
+caption:
+  font-family: KaiGen Gothic JP
+  margin-inside: $vertical_rhythm * 0.4
+  margin-outside: $vertical_rhythm * 1.5
