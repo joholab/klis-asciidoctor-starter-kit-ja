@@ -35,7 +35,7 @@ PS C:\Users\アカウント名>gem install -N rouge asciidoctor asciidoctor-pdf
     - [SourceHanSerifJP-VF.ttf](https://github.com/adobe-fonts/source-han-serif/tree/release/Variable/TTF/Subset)
     - [KaiGenGothicJP-Regular.ttf](https://github.com/chloerei/asciidoctor-pdf-cjk-kai_gen_gothic/releases)
     - [RobotoMono-VariableFont_wght.ttf](https://fonts.google.com/specimen/Roboto+Mono)（ダウンロード→展開）
-- [大学ホームページ](https://www.tsukuba.ac.jp/about/outline-logomark/)から校章画像をダウンロードして、`themes`フォルダに保存
+- [大学ホームページ](https://www.tsukuba.ac.jp/about/outline-logomark/)から校章画像をダウンロードして、`themes`と`images`フォルダにそれぞれ保存
     - :muscle: 上級者向け：校章画像ファイルは`.gitignore`に登録されています
 - ダウンロードしたフォルダをVSCodeで開く
 - `index.adoc`を適宜修正
@@ -46,22 +46,6 @@ asciidoctor-pdf -a scripts=cjk -a pdf-theme=./themes/klis-theme.yml -a pdf-fonts
 ```
 - PDFファイル（`index.pdf`）が生成されたことを確認
 - ファイルを修正したら上記コマンドを再実行します
-
-## ファイル一覧
-
-:bulb: 章の構成は以下を基本としつつも、必要に応じて変更すること。初期状態では序論と引用文献のみがインポートされています。`index.adoc`の該当行のコメントを外すことで、他の章もインポートできます。
-
-- 序論：`introduction.adoc`
-- 方法：`methods.adoc`
-- 結果：`results.adoc`
-- 議論：`discussion.adoc`
-- 結論：`conclusion.adoc`
-- 引用文献：`reference.adoc`
-- 付録：`appendix.adoc`（任意）
-
-## 画像ファイルの保存場所
-
-- 本文中で読み込む画像は、`images`フォルダに保存してください
 
 ## 基本的な使い方
 
