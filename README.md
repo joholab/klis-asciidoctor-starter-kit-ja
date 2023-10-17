@@ -42,9 +42,11 @@ PS C:\Users\アカウント名>gem install -N rouge asciidoctor asciidoctor-pdf
 - VScodeでターミナルを起動する(`` Ctr+Shift+` ``)
 - 以下のコマンドを実行
 ```bash
+cd [ダウンロードしたフォルダのパス]
 asciidoctor-pdf -a scripts=cjk -a pdf-theme=./themes/klis-theme.yml -a pdf-fontsdir=./fonts index.adoc 
 ```
 - PDFファイル（`index.pdf`）が生成されたことを確認
+    - asciidoctor-pdfが見つからないエラーが表示されたら、VSCodeを再起動してみましょう
 - ファイルを修正したら上記コマンドを再実行します
 
 ## 基本的な使い方
