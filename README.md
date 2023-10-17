@@ -37,16 +37,16 @@ PS C:\Users\アカウント名>gem install -N rouge asciidoctor asciidoctor-pdf
     - [RobotoMono-VariableFont_wght.ttf](https://fonts.google.com/specimen/Roboto+Mono)（ダウンロード→展開）
 - [大学ホームページ](https://www.tsukuba.ac.jp/about/outline-logomark/)から校章画像をダウンロードして、`themes`と`images`フォルダにそれぞれ保存
     - :muscle: 上級者向け：校章画像ファイルは`.gitignore`に登録されています
-- ダウンロードしたフォルダをVSCodeで開く
+- ダウンロードしたフォルダをVSCodeで開く（`` Ctr+O `` → フォルダ選択）
 - `index.adoc`を適宜修正
 - VScodeでターミナルを起動する(`` Ctr+Shift+` ``)
 - 以下のコマンドを実行
 ```bash
-cd [ダウンロードしたフォルダのパス]
 asciidoctor-pdf -a scripts=cjk -a pdf-theme=./themes/klis-theme.yml -a pdf-fontsdir=./fonts index.adoc 
 ```
 - PDFファイル（`index.pdf`）が生成されたことを確認
     - asciidoctor-pdfが見つからないエラーが表示されたら、VSCodeを再起動してみましょう
+    - ターミナル内でもダウンロードしたフォルダに移動する必要があります（``cd ダウンロードしたフォルダのパス``）
 - ファイルを修正したら上記コマンドを再実行します
 
 ## 基本的な使い方
