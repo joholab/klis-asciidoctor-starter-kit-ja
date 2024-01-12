@@ -35,8 +35,6 @@ PS C:\Users\アカウント名>gem install -N rouge asciidoctor asciidoctor-pdf
     - [SourceHanSerifJP-VF.ttf](https://github.com/adobe-fonts/source-han-serif/tree/release/Variable/TTF/Subset)
     - [KaiGenGothicJP-Regular.ttf](https://github.com/chloerei/asciidoctor-pdf-cjk-kai_gen_gothic/releases)
     - [RobotoMono-VariableFont_wght.ttf](https://fonts.google.com/specimen/Roboto+Mono)（ダウンロード→展開）
-- [大学ホームページ](https://www.tsukuba.ac.jp/about/outline-logomark/)から校章画像をダウンロードして、`themes`と`images`フォルダにそれぞれ保存
-    - :muscle: 上級者向け：校章画像ファイルは`.gitignore`に登録されています
 - ダウンロードしたフォルダをVSCodeで開く（`` Ctr+O `` → フォルダ選択）
 - `index.adoc`を適宜修正
 - VScodeでターミナルを起動する(`` Ctr+Shift+` ``)
