@@ -69,9 +69,6 @@ title_page:
     content:
       name_only: "{graduation} +\n +\n +\n{student-id} +\n{author} +\n +\n +\n{affiliation1} +\n{affiliation2}"
     font_size: $heading_h3_font_size
-  logo:
-    top: 85%
-    image: image:UTLogo_150.png[pdfwidth=15%]
 codespan:
   font_family: Robot Mono JP
 code:
